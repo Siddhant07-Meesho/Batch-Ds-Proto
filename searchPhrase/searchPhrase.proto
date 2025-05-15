@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message SearchPhrases {
+  repeated Groups phrases = 1;
+}
+message Groups {
+  int32 id = 1;
+  string sp = 2;
+}
