@@ -16,7 +16,7 @@ def populate_redis():
     """Populates Redis with catalog data."""
     for catalogId in range(1000000, 1300000):
         # BDC-> Batch Ds Catalogs
-        redis_key = f"BDC:{catalogId}"
+        redis_key = f"BDC:V2:{catalogId}"
         feed = generate_feed()
 
         # Create a protobuf object and extend it with the generated feed
